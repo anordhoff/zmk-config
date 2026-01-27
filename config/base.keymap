@@ -2,13 +2,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/behaviors.h>
 
-#define COLEMAK     0
-#define COLEMAK_MEH 1
-#define SYMBOL      2
-#define NUMPAD      3
-#define NAVIGATION  4
-#define FUNCTION    5
-#define ADJUST      6
+#define _COLEMAK     0
+#define _COLEMAK_MEH 1
+#define _SYMBOL      2
+#define _NUMPAD      3
+#define _NAVIGATION  4
+#define _FUNCTION    5
+#define _ADJUST      6
 
 &mt {
     tapping-term-ms = <200>;
@@ -41,29 +41,29 @@ behaviors {
 };
 
 // colemak layers
-#define SYM     &mo SYMBOL
-#define NUM     &mo NUMPAD
-#define NAV     &mo NAVIGATION
-#define FUNC    &mo FUNCTION
+#define SYM     &mo _SYMBOL
+#define NUM     &mo _NUMPAD
+#define NAV     &mo _NAVIGATION
+#define FUNC    &mo _FUNCTION
 #define LHYPER  LGUI
 #define RHYPER  RGUI
 
 // additional layers
-#define ADJUST  &mo ADJUST
+#define ADJUST  &mo _ADJUST
 
 // layer mod taps
 #define MT_SPACE &lt_spc SYMBOL SPACE
 #define MT_ESC   &mt_esc RSHFT  ESC
 
 // home row mods
-#define MT_A     &lt COLEMAK_MEH A
+#define MT_A     &lt _COLEMAK_MEH A
 #define MT_R     &mt LGUI  R
 #define MT_S     &mt LALT  S
 #define MT_T     &mt LCTRL T
 #define MT_N     &mt RCTRL N
 #define MT_E     &mt RALT  E
 #define MT_I     &mt RGUI  I
-#define MT_O     &lt COLEMAK_MEH O
+#define MT_O     &lt _COLEMAK_MEH O
 
 #define MT_DLLR  &mt LGUI  DLLR
 #define MT_PRCNT &mt LALT  PRCNT
