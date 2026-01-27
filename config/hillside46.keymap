@@ -11,85 +11,107 @@
     compatible = "zmk,keymap";
 
     colemak {
-/*
- *    ┌───────────┬──────────┬──────────┬──────────┬──────────┬──────────┐                             -----------------------------------------------------------------
- *    |    TAB    |    Q     |    W     |    F     |    P     |    B     |                           |    J     |    L     |    U     |    Y     |    ;     |    '     |
- *        ────────┼───────┤
- *    |    BSPC   |    A     |    R     |    S     |    T     |    G     |----------       ----------|    M     |    N     |    E     |    I     |    O     |   ENTER  |
- *    |    XXX    |    Z     |    X     |    C     |    D     |    V     |   XXX    |     |   XXX    |    K     |    H     |    ,     |    .     |    /     |   XXX    |
- *     ---------------------------------|   XXX    |  SPACE   |  BT_PRV  |   XXX    |     |   XXX    |  BT_NXT  |  SHIFT   |   XXX    |--------------------------------
- *                                       -------------------------------------------       -------------------------------------------
- */
       bindings = <
+
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
         &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+        &kp BSPC    MT_A        &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       MT_O        &kp ENTER
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        &kp LCTRL   &kp Z       &kp X       &kp C       &kp D       &kp V       &none          &none       &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   &none
+        XXXXXXXXX   &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXX
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            &none       &kp SPACE   &bt BT_PRV  &none          &none       &bt BT_NXT  &kp RSHIFT  &none
+                                            XXXXXXXXX   MT_SPACE    &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  MT_ESC      XXXXXXXX
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     colemak_meh {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        XXXXXXXX    LM_Q        LM_W        LM_F        LM_P        LM_B                                   LM_J        LM_L        LM_U        LM_Y        LM_BSPC     XXXXXXXXX
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        LM_TAB      LM_A        LM_R        LM_S        LM_T        LM_G                                   LM_M        LM_N        LM_E        LM_I        LM_O        LM_ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    LM_Z        LM_X        LM_C        LM_D        LM_V        XXXXXXXX       XXXXXXXX    LM_K        LM_H        LM_LBKT     LM_RBKT     LM_SQT      XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    LHYPER      XXXXXXXX    XXXXXXXX       XXXXXXXX    XXXXXXXX    RHYPER      XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     symbol {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    &kp SPACE   &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  &kp RSHIFT  XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     numpad {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    &kp SPACE   &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  &kp RSHIFT  XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     navigation {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    &kp SPACE   &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  &kp RSHIFT  XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     function {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    &kp SPACE   &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  &kp RSHIFT  XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
 
     adjust {
-
       bindings = <
-        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
-        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
-        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
-                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+
+/*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
+        &kp TAB     &kp Q       &kp W       &kp F       &kp P       &kp B                                  &kp J       &kp L       &kp U       &kp Y       &kp SEMI    &kp SQT
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        &kp BSPC    &kp A       &kp R       &kp S       &kp T       &kp G                                  &kp M       &kp N       &kp E       &kp I       &kp O       &kp ENTER
+/*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
+        XXXXXXXX    &kp Z       &kp X       &kp C       &kp D       &kp V       XXXXXXXX       XXXXXXXX    &kp K       &kp H       &kp COMMA   &kp DOT     &kp SLASH   XXXXXXXXX
+/*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
+                                            XXXXXXXX    &kp SPACE   &bt BT_PRV  XXXXXXXX       XXXXXXXX    &bt BT_NXT  &kp RSHIFT  XXXXXXXXX
+/*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
   };
