@@ -1,21 +1,16 @@
-/*
- * Copyright (c) 2021-2022 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/bt.h>
+
+#include "base.keymap"
 
 / {
   keymap {
     compatible = "zmk,keymap";
 
-    default_layer {
+    colemak {
 /*
  *     ------------------------------------------------------------------                             -----------------------------------------------------------------
  *    |    TAB    |    Q     |    W     |    F     |    P     |    B     |                           |    J     |    L     |    U     |    Y     |    ;     |    '     |
@@ -24,6 +19,66 @@
  *     ---------------------------------|   XXX    |  SPACE   |  BT_PRV  |   XXX    |     |   XXX    |  BT_NXT  |  SHIFT   |   XXX    |--------------------------------
  *                                       -------------------------------------------       -------------------------------------------
  */
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    colemak_meh {
+
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    symbol {
+
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    numpad {
+
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    navigation {
+
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    function {
+
+      bindings = <
+        &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
+        &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
+        &kp LCTRL  &kp Z      &kp X      &kp C      &kp D      &kp V      &none            &none      &kp K      &kp H      &kp COMMA  &kp DOT    &kp SLASH  &none
+                                         &none      &kp SPACE  &bt BT_PRV &none            &none      &bt BT_NXT &kp RSHIFT &none
+      >;
+    };
+
+    adjust {
+
       bindings = <
         &kp TAB    &kp Q      &kp W      &kp F      &kp P      &kp B                                  &kp J      &kp L      &kp U      &kp Y      &kp SEMI   &kp SQT
         &kp BSPC   &kp A      &kp R      &kp S      &kp T      &kp G                                  &kp M      &kp N      &kp E      &kp I      &kp O      &kp ENTER
