@@ -35,7 +35,7 @@
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
       XXXXXXX    LM_Z      LM_X      LM_C      LM_D      LM_V     XXXXXXX      XXXXXXX    LM_K      LM_H     LM_LBKT   LM_RBKT   LM_SQT    XXXXXXX      
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                    XXXXXXX   LHYPER    XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   RHYPER    XXXXXXX      
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      
 /*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
