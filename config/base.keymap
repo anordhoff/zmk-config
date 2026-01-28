@@ -42,8 +42,8 @@
 #define _FUNCTION    5
 #define _ADJUST      6
 
-#define XXXXXXXXX &none
-#define _________ &trans
+#define XXXXXXX &none
+#define _______ &trans
 
 // colemak layers
 #define SYM     &mo _SYMBOL

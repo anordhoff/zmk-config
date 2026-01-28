@@ -18,9 +18,9 @@
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                     ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
      &kp BSPC    MT_A     &kp R     &kp S     &kp T     &kp G                           &kp M     &kp N     &kp E     &kp I     MT_O     &kp ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐ ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-     XXXXXXXXX  &kp Z     &kp X     &kp C     &kp D     &kp V    XXXXXXXXX   XXXXXXXXX  &kp K     &kp H    &kp COMMA  &kp DOT  &kp SLASH XXXXXXXXX
+      XXXXXXX   &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX     XXXXXXX   &kp K     &kp H    &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX      
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                   XXXXXXXXX XXXXXXXXX &bt BT_PRV XXXXXXXXX  XXXXXXXXX &bt BT_NXT MT_ESC   XXXXXXXXX
+                                    XXXXXXX   XXXXXXX  &bt BT_PRV XXXXXXX     XXXXXXX  &bt BT_NXT MT_ESC    XXXXXXX      
 /*                                └─────────┴─────────┴─────────┴─────────┘ └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
@@ -29,13 +29,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXX    LM_Q        LM_W        LM_F        LM_P        LM_B                                   LM_J        LM_L        LM_U        LM_Y        LM_BSPC     XXXXXXXXX
+         XXXXXXX         LM_Q        LM_W        LM_F        LM_P        LM_B                                   LM_J        LM_L        LM_U        LM_Y        LM_BSPC      XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
         LM_TAB      LM_A        LM_R        LM_S        LM_T        LM_G                                   LM_M        LM_N        LM_E        LM_I        LM_O        LM_ENTER
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXX    LM_Z        LM_X        LM_C        LM_D        LM_V        XXXXXXXX       XXXXXXXX    LM_K        LM_H        LM_LBKT     LM_RBKT     LM_SQT      XXXXXXXXX
+         XXXXXXX         LM_Z        LM_X        LM_C        LM_D        LM_V         XXXXXXX              XXXXXXX          LM_K        LM_H        LM_LBKT     LM_RBKT     LM_SQT       XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXX    LHYPER      XXXXXXXX    XXXXXXXX       XXXXXXXX    XXXXXXXX    RHYPER      XXXXXXXXX
+                                             XXXXXXX         LHYPER       XXXXXXX          XXXXXXX              XXXXXXX           XXXXXXX          RHYPER       XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
@@ -44,13 +44,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX      XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXX       XXXXXXXX    XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+                                             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
@@ -59,13 +59,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX      XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXX       XXXXXXXX    XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+                                             XXXXXXX          XXXXXXX          XXXXXXX         XXXXXXX            XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
@@ -74,13 +74,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX      XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXX       XXXXXXXX    XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+                                             XXXXXXX          XXXXXXX          XXXXXXX         XXXXXXX            XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
@@ -89,13 +89,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX      XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXX       XXXXXXXX    XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+                                             XXXXXXX          XXXXXXX          XXXXXXX         XXXXXXX            XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
@@ -104,13 +104,13 @@
       bindings = <
 
 /*    ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐                          ┌───────────┬───────────┬───────────┬───────────┬───────────┬───────────┐  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤                          ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX                              XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX                                     XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    ├───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼──────────┐   ┌───────────┼───────────┼───────────┼───────────┼───────────┼───────────┼───────────┤  */
-        XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX      XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+         XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX             XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*    └───────────┴───────────┴───────────┼───────────┼───────────┼───────────┼──────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┴───────────┴───────────┘  */
-                                            XXXXXXXXX   XXXXXXXXX   XXXXXXXXX   XXXXXXXX       XXXXXXXX    XXXXXXXXX   XXXXXXXXX   XXXXXXXXX
+                                             XXXXXXX          XXXXXXX          XXXXXXX         XXXXXXX            XXXXXXX          XXXXXXX          XXXXXXX          XXXXXXX      
 /*                                        └───────────┴───────────┴───────────┴──────────┘   └───────────┴───────────┴───────────┴───────────┘                                      */
       >;
     };
