@@ -15,25 +15,20 @@
 / {
   behaviors {
     mt_esc: mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            compatible = "zmk,behavior-hold-tap";
             flavor = "hold-preferred";
             tapping-term-ms = <170>;
-            bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap-Escape";
     };
 
     lt_spc: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <170>;
-            bindings = <&mo>, <&kp>;
             display-name = "Layer-Tap-Space";
     };
   };
 };
 
+// layers
 #define _COLEMAK     0
 #define _COLEMAK_MEH 1
 #define _SYMBOL      2
@@ -42,6 +37,7 @@
 #define _FUNCTION    5
 #define _ADJUST      6
 
+// nice to have
 #define XXXXXXX &none
 #define _______ &trans
 
