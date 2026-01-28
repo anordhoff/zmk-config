@@ -18,9 +18,9 @@
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
      &kp BSPC    MT_A      &kp R     &kp S     &kp T     &kp G                            &kp M     &kp N     &kp E     &kp I     MT_O    &kp ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-      XXXXXXX    &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX      XXXXXXX   &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX      
+      XXXXXXX    &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX      XXXXXXX   &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                    _______  MT_SPACE  &bt BT_PRV XXXXXXX      XXXXXXX  &bt BT_NXT MT_ESC    _______      
+                                    _______  MT_SPACE  &bt BT_PRV XXXXXXX      XXXXXXX  &bt BT_NXT MT_ESC    _______
 /*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
@@ -33,9 +33,84 @@
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
       LM_TAB     LM_A      LM_R      LM_S      LM_T      LM_G                             LM_M      LM_N      LM_E      LM_I      LM_O    LM_ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-      XXXXXXX    LM_Z      LM_X      LM_C      LM_D      LM_V     XXXXXXX      XXXXXXX    LM_K      LM_H     LM_LBKT   LM_RBKT   LM_SQT    XXXXXXX      
+      XXXXXXX    LM_Z      LM_X      LM_C      LM_D      LM_V     XXXXXXX      XXXXXXX    LM_K      LM_H     LM_LBKT   LM_RBKT   LM_SQT    XXXXXXX
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                    XXXXXXX   LHYPER    XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   RHYPER    XXXXXXX      
+                                    XXXXXXX   LHYPER    XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   RHYPER    XXXXXXX
+/*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
+      >;
+    };
+
+    symbol {
+      bindings = <
+
+/*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
+      >;
+    };
+
+    numpad {
+      bindings = <
+
+/*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
+      >;
+    };
+
+    navigation {
+      bindings = <
+
+/*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
+      >;
+    };
+
+    function {
+      bindings = <
+
+/*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
+      >;
+    };
+
+    adjust {
+      bindings = <
+
+/*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
+      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+/*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
+                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
 /*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
