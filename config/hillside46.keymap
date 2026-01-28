@@ -29,7 +29,7 @@
       bindings = <
 
 /*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
-      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+      XXXXXXX    LM_Q      LM_W      LM_F      LM_P      LM_B                             LM_J       LM_L     LM_U      LM_Y     LM_BSPC   XXXXXXX
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
       XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
