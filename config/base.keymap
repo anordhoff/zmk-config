@@ -50,8 +50,8 @@
 #define NUM     &mo _NUMPAD
 #define NAV     &mo _NAVIGATION
 #define FUNC    &mo _FUNCTION
-#define LHYPER  LGUI
-#define RHYPER  RGUI
+#define LHYPER  &kp LGUI
+#define RHYPER  &kp RGUI
 
 // additional layers
 #define ADJUST  &mo _ADJUST
