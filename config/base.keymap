@@ -57,7 +57,7 @@
 #define ADJUST  &mo _ADJUST
 
 // layer mod taps
-#define MT_SPACE &lt_spc SYMBOL SPACE
+#define MT_SPACE &lt_spc _SYMBOL SPACE
 #define MT_ESC   &mt_esc RSHFT  ESC
 
 // home row mods
