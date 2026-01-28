@@ -3,13 +3,13 @@
 #include <dt-bindings/zmk/behaviors.h>
 
 &mt {
-    tapping-term-ms = <200>;
-    flavor = "tap-preferred";
+  tapping-term-ms = <200>;
+  flavor = "tap-preferred";
 };
 
 &lt {
-    tapping-term-ms = <250>;
-    flavor = "tap-preferred";
+  tapping-term-ms = <250>;
+  flavor = "tap-preferred";
 };
 
 / {
@@ -38,19 +38,19 @@
 #define _ADJUST      6
 
 // nice to have
-#define XXXXXXX &none
-#define _______ &trans
+#define XXXXXXX  &none
+#define _______  &trans
 
 // colemak layers
-#define SYM     &mo _SYMBOL
-#define NUM     &mo _NUMPAD
-#define NAV     &mo _NAVIGATION
-#define FUNC    &mo _FUNCTION
-#define LHYPER  &kp LGUI
-#define RHYPER  &kp RGUI
+#define SYM      &mo _SYMBOL
+#define NUM      &mo _NUMPAD
+#define NAV      &mo _NAVIGATION
+#define FUNC     &mo _FUNCTION
+#define LHYPER   &kp LGUI
+#define RHYPER   &kp RGUI
 
 // additional layers
-#define ADJUST  &mo _ADJUST
+#define ADJUST   &mo _ADJUST
 
 // layer mod taps
 #define MT_SPACE &lt_spc _SYMBOL SPACE
