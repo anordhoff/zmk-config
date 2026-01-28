@@ -20,7 +20,7 @@
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐ ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
      XXXXXXXXX  &kp Z     &kp X     &kp C     &kp D     &kp V    XXXXXXXXX   XXXXXXXXX  &kp K     &kp H    &kp COMMA  &kp DOT  &kp SLASH XXXXXXXXX
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤ ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                   XXXXXXXXX MT_SPACE  &bt BT_PRV XXXXXXXXX  XXXXXXXXX &bt BT_NXT MT_ESC   XXXXXXXXX
+                                   XXXXXXXXX XXXXXXXXX &bt BT_PRV XXXXXXXXX  XXXXXXXXX &bt BT_NXT MT_ESC   XXXXXXXXX
 /*                                └─────────┴─────────┴─────────┴─────────┘ └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
