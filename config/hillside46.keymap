@@ -16,7 +16,7 @@
 /*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
      &kp TAB    &kp Q     &kp W     &kp F     &kp P     &kp B                            &kp J     &kp L     &kp U     &kp Y    &kp SEMI   &kp SQT
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-     &kp BSPC   &kp A     &kp R     &kp S     &kp T     &kp G                            &kp M     &kp N     &kp E     &kp I     &kp O    &kp ENTER
+     &kp BSPC    MT_A     &kp R     &kp S     &kp T     &kp G                            &kp M     &kp N     &kp E     &kp I      MT_O    &kp ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
       XXXXXXX   &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX      XXXXXXX   &kp K     &kp H    &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX      
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
@@ -29,13 +29,13 @@
       bindings = <
 
 /*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
-      XXXXXXX   LM_Q      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+      XXXXXXX    LM_Q      LM_W      LM_F      LM_P      LM_B                             LM_J      LM_L      LM_U      LM_Y     LM_BSPC   XXXXXXX
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX                          XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+      LM_TAB     LM_A      LM_R      LM_S      LM_T      LM_G                             LM_M      LM_N      LM_E      LM_I      LM_O    LM_ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX
+      XXXXXXX    LM_Z      LM_X      LM_C      LM_D      LM_V     XXXXXXX      XXXXXXX    LM_K      LM_H     LM_LBKT   LM_RBKT   LM_SQT    XXXXXXX      
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                    XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX      
+                                    XXXXXXX   LHYPER    XXXXXXX   XXXXXXX      XXXXXXX   XXXXXXX   RHYPER    XXXXXXX      
 /*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
