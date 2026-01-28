@@ -79,7 +79,6 @@
  
 // meh layer keys
 #define LM_A     LCTRL(LSHFT(LALT(A)))
-#define LM_A     LCTRL(LSHFT(LALT(A)))
 #define LM_B     LCTRL(LSHFT(LALT(B)))
 #define LM_C     LCTRL(LSHFT(LALT(C)))
 #define LM_D     LCTRL(LSHFT(LALT(D)))
