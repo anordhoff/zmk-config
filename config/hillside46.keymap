@@ -14,13 +14,13 @@
       bindings = <
 
 /*  ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                      ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐  */
-      &kp TAB   &kp Q     &kp W     &kp F     &kp P     &kp B                            &kp J     &kp L     &kp U     &kp Y    &kp SEMI   &kp SQT
+      &kp TAB    &kp Q     &kp W     &kp F     &kp P     &kp B                            &kp J     &kp L     &kp U     &kp Y   &kp SEMI   &kp SQT
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                      ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-     &kp BSPC    MT_A     &kp R     &kp S     &kp T     &kp G                            &kp M     &kp N     &kp E     &kp I      MT_O    &kp ENTER
+     &kp BSPC    MT_A      &kp R     &kp S     &kp T     &kp G                            &kp M     &kp N     &kp E     &kp I     MT_O    &kp ENTER
 /*  ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐  ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤  */
-      XXXXXXX   &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX      XXXXXXX   &kp K     &kp H    &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX      
+      XXXXXXX    &kp Z     &kp X     &kp C     &kp D     &kp V     XXXXXXX      XXXXXXX   &kp K     &kp H   &kp COMMA  &kp DOT  &kp SLASH  XXXXXXX      
 /*  └─────────┴─────────┴─────────┼─────────┼─────────┼─────────┼─────────┤  ├─────────┼─────────┼─────────┼─────────┼─────────┴─────────┴─────────┘  */
-                                    _______  MT_SPACE  &bt BT_PRV XXXXXXX      XXXXXXX  &bt BT_NXT MT_ESC    _______      
+                                    _______   _______  &bt BT_PRV XXXXXXX      XXXXXXX  &bt BT_NXT MT_ESC    _______      
 /*                                └─────────┴─────────┴─────────┴─────────┘  └─────────┴─────────┴─────────┴─────────┘                                */
       >;
     };
